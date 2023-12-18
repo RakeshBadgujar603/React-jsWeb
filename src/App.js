@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import UserlistingDummy from './UserlistingDummy'
 
 function App() {
+
+  const onClickSubmit=()=>{
+  alert("hello i am success")
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{alignSelf:"center"}}>
+      <h1>hello</h1>
+      <h2>hello</h2>
+      <h3>hello</h3>
+      <UserlistingDummy/>
+
+      <button onClick={onClickSubmit}>hello</button>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
